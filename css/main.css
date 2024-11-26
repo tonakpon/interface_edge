@@ -1,0 +1,31 @@
+.box {
+    height: 213px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* SMALL */
+@media screen and (min-width: 576px) {
+    .box:first-child {
+        height: 640px;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        align-content: center;
+        justify-content: center;
+    }
+    .box:nth-child(2) {
+        height: 320px;
+    }
+    .box:nth-child(3) {
+        height: 320px;
+    }
+    .container {
+        font-size: 4rem;
+        display: grid;
+        grid-auto-flow: column;
+        padding: 0;
+    }
+}
